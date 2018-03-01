@@ -7,6 +7,4 @@ import com.zipcodewilmington.froilansfarm.Farm.Farm;
  */
 public class MainApplication {
 
-    Farm farm = new Farm();
-
 }

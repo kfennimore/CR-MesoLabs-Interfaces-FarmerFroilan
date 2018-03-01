@@ -1,4 +1,10 @@
 package com.zipcodewilmington.froilansfarm.Field;
 
-public class CropRow extends Field{
+import java.util.ArrayList;
+
+public class CropRow {
+
+    //contains many crop
+    protected ArrayList<Crop> crops = new ArrayList<Crop>();
+
 }

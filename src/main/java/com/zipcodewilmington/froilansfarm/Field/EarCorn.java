@@ -1,4 +1,10 @@
 package com.zipcodewilmington.froilansfarm.Field;
 
-public class EarCorn extends Cornstalk {
+import com.zipcodewilmington.froilansfarm.Interfaces.Edible;
+
+public class EarCorn implements Edible{
+
+    public boolean edible() {
+        return false;
+    }
 }

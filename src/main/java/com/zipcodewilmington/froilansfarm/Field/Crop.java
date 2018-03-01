@@ -2,20 +2,13 @@ package com.zipcodewilmington.froilansfarm.Field;
 
 import com.zipcodewilmington.froilansfarm.Interfaces.Produce;
 
+import java.util.ArrayList;
+
 //cant make abstract because you cant instantiate an abstract class
 //will need to instantiate crops
-public class Crop extends CropRow implements Produce {
+public abstract class Crop implements Produce {
 
-    public boolean hasBeenHarvested(Crop crop){
-        return false;
+    protected Cornstalk cornstalk = new Cornstalk();
+    protected TomatoPlant tomatoPlant = new TomatoPlant();
 
-    }
-
-    public boolean hasBeenFertilized(Crop crop){
-        return false;
-    }
-
-    public Object yields() {
-        return null;
-    }
 }

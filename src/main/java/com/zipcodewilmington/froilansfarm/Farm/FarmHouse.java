@@ -1,8 +1,14 @@
 package com.zipcodewilmington.froilansfarm.Farm;
 
-import com.zipcodewilmington.froilansfarm.Person.Person;
+public class FarmHouse {
 
-public class FarmHouse extends Farm {
+    private static FarmHouse ourInstance = new FarmHouse();
 
-    Person persons = new Person();
+    public static FarmHouse getInstance() {
+
+        return ourInstance;
+    }
+
+    private FarmHouse() {
+    }
 }

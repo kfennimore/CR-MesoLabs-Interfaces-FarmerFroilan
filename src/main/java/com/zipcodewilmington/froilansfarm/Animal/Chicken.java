@@ -4,6 +4,8 @@ import com.zipcodewilmington.froilansfarm.Interfaces.Produce;
 
 public class Chicken extends Animal implements Produce {
 
+    protected Egg egg = new Egg();
+
     public void eat() {
 
     }
@@ -12,7 +14,19 @@ public class Chicken extends Animal implements Produce {
         return null;
     }
 
+
     public Object yields() {
-        return null;
+
+        return egg;
+    }
+
+    //BECAUSE CHICKEN IS NOT HARVESTED
+    public boolean hasBeenHarvested() {
+        return false;
+    }
+
+    //BECAUSE CHICKEN IS NOT FERTILIZED
+    public boolean hasBeenFertilized() {
+        return false;
     }
 }
